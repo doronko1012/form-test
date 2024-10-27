@@ -1,0 +1,60 @@
+form_attribute_1.html
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <h1>form test</h1>
+    <!-- form 要素 -->
+    <form action="form_1_next.html" method="GET">
+      通常のinput <input name="t1" /><br />
+      size付きのinput <input name="t2" size="50" /><br />
+      maxlength付きのinput <input name="t3" maxlength="3" /><br />
+      通常のinput <input name="tt1" value="default-1" /><br />
+      readonlyのinput <input name="tt2" value="default-1" readonly /><br />
+      disabledのinput <input name="tt3" value="default-1" disabled /><br />
+      radio checked
+      <label><input name="radio_b" type="radio" value="11" />選択肢11</label>
+      <label><input name="radio_b" type="radio" value="22" />選択肢22</label>
+      <label
+        ><input name="radio_b" type="radio" value="33" checked />選択肢33</label
+      >
+      <br />
+      checkbox
+      <label
+        ><input name="check" type="checkbox" value="c1" checked />選択肢1</label
+      >
+      <label><input name="check" type="checkbox" value="c2" />選択肢2</label>
+      <label
+        ><input name="check" type="checkbox" value="c3" checked />選択肢3</label
+      >
+      <br />
+      select selected
+      <select name="sele_2">
+        <option></option>
+        <option>選択肢1</option>
+        <option>選択肢2</option>
+        <option selected>選択肢3</option></select
+      ><br />
+      select multi
+      <select name="sele_multiple" size="3" multiple>
+        <option selected>選択肢11</option>
+        <option>選択肢22</option>
+        <option selected>選択肢33</option></select
+      ><br />
+      ユーザID <input placeholder="IDを入力してください" /><br />
+      必須入力 <input required /><br />
+      入力候補付き <input list="keyword_list" /><br />
+      <!-- 入力候補の一覧 -->
+      <datalist id="keyword_list">
+        <option value="入力候補"></option>
+        <option value="DMM"></option>
+        <option value="WEBCAMP"></option>
+        <option value="HTML"></option>
+        <option value="form"></option>
+      </datalist>
+      <button>送信する</button>
+    </form>
+  </body>
+</html>

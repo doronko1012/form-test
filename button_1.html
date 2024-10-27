@@ -1,0 +1,26 @@
+form_button_1.html
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <h1>form test</h1>
+    <!-- form 要素 -->
+    <form action="form_1_next.html" method="GET">
+      <button type="submit" autofocus disabled>送信する</button>
+      <br /><br />
+      <button type="button" id="button_test">送信する(button)</button>
+    </form>
+    <script>
+      // 「画面読み込み時の処理」を書く
+      window.addEventListener("DOMContentLoaded", function () {
+        // 「id="button_test"」のボタンがクリックされたときの処理を書く
+        document.getElementById("button_test").onclick = function () {
+          // 「Hello」と出力する
+          alert("Hello");
+        };
+      });
+    </script>
+  </body>
+</html>
