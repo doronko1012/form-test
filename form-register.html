@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <!-- form 要素 -->
+    <form action="/user/register" method="POST">
+      名前 <input type="text" name="t1" placeholder="あなたの氏名" /><br />
+      誕生日 <input type="date" /><br />
+      性別
+      <label> <input name="gender" type="radio" value="c1" />男性</label>
+      <label><input name="gender" type="radio" value="c2" />女性</label>
+      <label
+        ><input name="gender" type="radio" value="c3" checked />その他</label
+      >
+      <br />
+      <label
+        ><input
+          name="check"
+          type="checkbox"
+          value="c1"
+          required
+        />利用規約を確認しました</label
+      >
+      <input type="hidden" name="token" value="abcdefg" /><br />
+      <br />
+      <button>会員登録</button>
+    </form>
+  </body>
+</html>
